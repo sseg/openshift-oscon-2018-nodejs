@@ -20,23 +20,22 @@
       <p>Page view count:
       <% if (pageCountMessage) { %>
           <span class="code" id="count-value"><%= pageCountMessage %></span>
-      <div class="code"><h3>DB Connection Info:</h3>
-        <table style='margin-left: 20px'>
+          <!-- <div class="code"><h3>DB Connection Info:</h3>
+          <table style='margin-left: 20px'>
             <tr><td>Type:</td><td><%= dbInfo.type %></td></tr>
             <tr><td>URL:</td><td><%= dbInfo.url %></td></tr>
-        </table>
-      </div>
+          </table>
+          </div> -->
       <% } else { %>
           <span class="code" id="count-value">No database configured</span>
       </p>
       <%} %>
   </div>
-</section>
 
-        <footer>
-          <div class="logo"><a href="https://www.openshift.com/"></a></div>
-          <div class="azure"><a href="https://azure.microsoft.com/"></a></div>
-        </footer>
+<footer>
+  <div class="logo"><a href="https://www.openshift.com/"></a></div>
+  <div class="azure"><a href="https://azure.microsoft.com/"></a></div>
+</footer>
 </section>
 </body>
 </html>
