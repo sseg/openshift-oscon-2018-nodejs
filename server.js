@@ -56,7 +56,7 @@ var initDb = function(callback) {
   });
 };
 
-//app.use(express.static('views'));
+app.use(express.static(__dirname + 'views'));
 
 app.get('/', function (req, res) {
   // try to initialize the db on every request if it's not already
