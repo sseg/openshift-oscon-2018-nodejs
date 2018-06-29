@@ -2,6 +2,7 @@
 var express = require('express'),
     app     = express(),
     morgan  = require('morgan');
+var path = require('path');
     
 Object.assign=require('object-assign')
 
@@ -56,7 +57,7 @@ var initDb = function(callback) {
   });
 };
 
-app.use(express.static(__dirname + 'views'));
+app.use(express.static(path.join(__dirname, 'views')));
 
 app.get('/', function (req, res) {
   // try to initialize the db on every request if it's not already
